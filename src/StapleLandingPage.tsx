@@ -259,7 +259,7 @@ export default function StapleLandingPage() {
         <section id="contact" className="scroll-mt-24">
           <div className="mx-auto max-w-6xl px-5 py-14 md:py-20">
             <div className="grid items-start gap-10 md:grid-cols-12">
-              <div className="md:col-span-12">
+              <div className="md:col-span-6">
                 <p className="text-xs font-medium tracking-[0.22em] opacity-80">CONTACT</p>
                 <h2 className="mt-4 text-3xl font-medium tracking-tight">Hello 👋</h2>
                 <p className="mt-4 text-sm leading-relaxed opacity-85">
@@ -336,15 +336,6 @@ function FeatureRow({ title, body }: { title: string; body: string }) {
         </div>
         {/* <div className="hidden md:block text-xs opacity-60">STAPLE</div> */}
       </div>
-    </div>
-  );
-}
-
-function MiniStat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-2xl border px-4 py-3" style={{ borderColor: "rgba(37,38,64,0.14)" }}>
-      <div className="text-xs opacity-70">{label}</div>
-      <div className="mt-1 text-sm font-medium">{value}</div>
     </div>
   );
 }

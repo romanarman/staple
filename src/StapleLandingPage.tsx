@@ -194,37 +194,57 @@ export default function StapleLandingPage() {
 
                   <div className="mt-6 grid gap-3 md:grid-cols-2">
                     <a
-                      className="rounded-2xl border px-4 py-3 text-sm font-medium transition"
-                      style={{ borderColor: "rgba(37,38,64,0.22)" }}
-                      href="https://www.google.com/maps/search/?api=1&query=112%20St%20Marks%20Road%2C%20Easton%2C%20Bristol%2C%20BS5%206JD"
-                      target="_blank"
-                      rel="noreferrer"
+                        className="inline-flex items-center justify-center gap-2 rounded-2xl border px-4 py-3 text-sm font-medium transition hover:bg-[rgba(37,38,64,0.04)]"
+                        style={{ borderColor: "rgba(37,38,64,0.22)" }}
+                        href="https://www.google.com/maps/search/?api=1&query=112%20St%20Marks%20Road%2C%20Easton%2C%20Bristol%2C%20BS5%206JD"
+                        target="_blank"
+                        rel="noreferrer"
                     >
-                      Open in Maps
+                        {/* Map pin icon (subtle, monochrome) */}
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-4 w-4 opacity-80"
+                        aria-hidden="true"
+                        >
+                        <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z" />
+                        <circle cx="12" cy="10" r="2.5" />
+                        </svg>
+                        Open in Maps
                     </a>
-                    <a
-                      className="rounded-2xl px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow"
-                      style={{ backgroundColor: NAVY, color: CREAM }}
-                      href="https://waze.com/ul?q=112%20St%20Marks%20Road%20Easton%20Bristol%20BS5%206JD&navigate=yes"
-                    >
-                      Open in Waze
-                    </a>
-                  </div>
 
-                  {/* <div
-                    className="mt-6 overflow-hidden rounded-2xl border"
-                    style={{ borderColor: "rgba(37,38,64,0.14)" }}
+                    <a
+                        className="inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-sm font-medium shadow-sm transition hover:shadow"
+                        style={{ backgroundColor: NAVY, color: CREAM }}
+                        href="https://waze.com/ul?q=112%20St%20Marks%20Road%20Easton%20Bristol%20BS5%206JD&navigate=yes"
+                        target="_blank"
+                        rel="noreferrer"
                     >
-                    <iframe
-                        title="Staple Bakery location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.421860550684!2d-2.567093223322158!3d51.46877041352457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e391e3286bf%3A0x29f7465bea1e90d6!2s112%20St%20Marks%20Rd%2C%20Easton%2C%20Bristol%20BS5%206JD!5e0!3m2!1sen!2suk!4v1768683197875!5m2!1sen!2suk"
-                        width="100%"
-                        height="360"
-                        style={{ border: 0 }}
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                    />
-                    </div> */}
+                        {/* Simple route icon (keeps it brand-neutral) */}
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="h-4 w-4 opacity-90"
+                        aria-hidden="true"
+                        >
+                        <path d="M7 7h10" />
+                        <path d="M7 7v10a3 3 0 0 0 3 3h7" />
+                        <circle cx="7" cy="7" r="1.5" />
+                        <circle cx="17" cy="20" r="1.5" />
+                        </svg>
+                        Open in Waze
+                    </a>
+                    </div>
                 </div>
               </div>
             </div>
@@ -239,7 +259,7 @@ export default function StapleLandingPage() {
         <section id="contact" className="scroll-mt-24">
           <div className="mx-auto max-w-6xl px-5 py-14 md:py-20">
             <div className="grid items-start gap-10 md:grid-cols-12">
-              <div className="md:col-span-6">
+              <div className="md:col-span-12">
                 <p className="text-xs font-medium tracking-[0.22em] opacity-80">CONTACT</p>
                 <h2 className="mt-4 text-3xl font-medium tracking-tight">Hello 👋</h2>
                 <p className="mt-4 text-sm leading-relaxed opacity-85">
@@ -258,7 +278,7 @@ export default function StapleLandingPage() {
                 </div>
               </div>
 
-              <div className="md:col-span-6">
+              {/* <div className="md:col-span-6">
                 <div className="rounded-3xl border p-6" style={{ borderColor: "rgba(37,38,64,0.14)" }}>
                   <div className="text-sm font-medium">Add your logo</div>
                   <p className="mt-2 text-sm opacity-80">
@@ -272,7 +292,7 @@ export default function StapleLandingPage() {
                     <MiniStat label="Coffee" value="Local roaster" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

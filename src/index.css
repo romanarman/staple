@@ -68,4 +68,10 @@ button:focus-visible {
 } */
 
 @import "tailwindcss";
+@import url("https://db.onlinewebfonts.com/c/e3246e712c1a7ad5c253f365451d6f57?family=Michigan+Signature");
 
+.font-signature {
+  font-family: "Michigan Signature", cursive;
+  color: red !important;
+  font-size: 80px !important;
+}

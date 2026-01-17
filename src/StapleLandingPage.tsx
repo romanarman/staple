@@ -22,6 +22,8 @@ export default function StapleLandingPage() {
           '"Hurme Geometric Sans 3", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
       }}
     >
+    <div id="top" />
+
       {/* 
         If you self-host Hurme, add something like this to your global CSS:
         @font-face { font-family: 'Hurme Geometric Sans 3'; src: url('/fonts/HurmeGeometricSans3-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; }
@@ -76,13 +78,13 @@ export default function StapleLandingPage() {
       </header>
 
       {/* Hero */}
-      <main id="top">
+      <main>
         <section className="relative">
           <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-6xl items-stretch gap-8 px-5 py-10 md:grid-cols-12 md:py-16">
             {/* Left: Big words */}
             <div className="md:col-span-7 flex items-center">
               <div className="w-full">
-                <p className="text-xs font-medium tracking-[0.22em] opacity-80">LOCAL BAKERY • FOUNDED 2026</p>
+                <p className="text-xs font-medium tracking-[0.22em] opacity-80">NEIGHBOURHOOD BAKERY • FOUNDED 2026</p>
                 <h1 className="mt-6 text-[clamp(3.5rem,8vw,10rem)] font-bold leading-[0.9] tracking-tight">
                   <span className="block">BREAD</span>
                   <span className="block">PASTRY</span>

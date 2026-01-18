@@ -124,7 +124,7 @@ export default function StapleLandingPage() {
               <div className="md:col-span-8">
                 <div className="max-w-2xl space-y-8 text-[clamp(1.05rem,1.2vw,1.25rem)] leading-relaxed opacity-90">
                 <p>
-                Founded in 2026, Staple sits just off Stapleton Road - a small neighbourhood bakery built around staples:
+                Founded in 2026, sitting just off Stapleton Road - a small neighbourhood bakery built around household staples:
                 the everyday breads, pastries and drinks that make a home feel like home.
                 </p>
                 <p>
